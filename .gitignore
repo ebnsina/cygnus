@@ -1,0 +1,29 @@
+# Internal planning docs and local data — never committed.
+docs/
+data/
+
+# Build output
+/bin/
+/dist/
+*.exe
+
+# Go
+*.test
+*.out
+coverage.*
+vendor/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Frontend (Phase 3)
+node_modules/
+cygnusui/web/dist/
