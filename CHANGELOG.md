@@ -20,5 +20,10 @@ before they appear in a tag.
   fetch, scheduler, and rescuer paths.
 - Spike queue operations: batched `COPY` insert, single-round-trip `SKIP LOCKED` fetch
   with leasing, and completion guarded on the job still being in `running`.
+- `LISTEN`/`NOTIFY` support behind a single `Listener` interface, with backends for
+  `pgx/v5`, `database/sql` over `pgx/stdlib`, and `database/sql` over `lib/pq`. Both
+  `database/sql` backends deliver real notifications rather than falling back to polling,
+  and report `ErrUnsupportedDriver` up front when a handle cannot supply a usable
+  PostgreSQL connection.
 
 [Unreleased]: https://github.com/ebnsina/cygnus/commits/main

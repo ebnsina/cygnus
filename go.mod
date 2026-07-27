@@ -2,7 +2,10 @@ module github.com/ebnsina/cygnus
 
 go 1.26.5
 
-require github.com/jackc/pgx/v5 v5.10.0
+require (
+	github.com/jackc/pgx/v5 v5.10.0
+	github.com/lib/pq v1.12.3
+)
 
 require (
 	github.com/jackc/pgpassfile v1.0.0 // indirect
