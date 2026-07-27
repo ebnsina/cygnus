@@ -8,7 +8,7 @@ expects from a change.
 ```sh
 git clone git@github.com:ebnsina/cygnus.git
 cd cygnus
-make db-up      # PostgreSQL 17 in Docker on port 5433
+make db-up      # PostgreSQL 17 in Docker on port 5434
 make migrate
 make test
 ```

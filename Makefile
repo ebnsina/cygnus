@@ -1,4 +1,4 @@
-CYGNUS_DATABASE_URL ?= postgres://cygnus:cygnus@localhost:5433/cygnus?sslmode=disable
+CYGNUS_DATABASE_URL ?= postgres://cygnus:cygnus@localhost:5434/cygnus?sslmode=disable
 export CYGNUS_DATABASE_URL
 
 GO      ?= go

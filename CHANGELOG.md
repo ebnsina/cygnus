@@ -18,5 +18,7 @@ before they appear in a tag.
   test, migrate, and benchmark workflows.
 - Feasibility-spike schema: the `cygnus_job` table plus the partial indexes backing the
   fetch, scheduler, and rescuer paths.
+- Spike queue operations: batched `COPY` insert, single-round-trip `SKIP LOCKED` fetch
+  with leasing, and completion guarded on the job still being in `running`.
 
 [Unreleased]: https://github.com/ebnsina/cygnus/commits/main

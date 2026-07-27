@@ -7,8 +7,8 @@ services:
       POSTGRES_PASSWORD: cygnus
       POSTGRES_DB: cygnus
     ports:
-      # 5433 on the host, to avoid colliding with a local PostgreSQL on 5432.
-      - "5433:5432"
+      # 5434 on the host, to avoid colliding with a local PostgreSQL on 5432.
+      - "5434:5432"
     command:
       # Tuned for benchmarking on a developer machine, not for production.
       - postgres
