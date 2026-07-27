@@ -14,5 +14,9 @@ before they appear in a tag.
 ### Added
 
 - Initial repository scaffolding: Go module, MIT license, contributor documentation.
+- PostgreSQL development environment via Docker Compose, and a Makefile covering build,
+  test, migrate, and benchmark workflows.
+- Feasibility-spike schema: the `cygnus_job` table plus the partial indexes backing the
+  fetch, scheduler, and rescuer paths.
 
 [Unreleased]: https://github.com/ebnsina/cygnus/commits/main
